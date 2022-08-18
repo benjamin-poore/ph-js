@@ -1,13 +1,46 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import Home from "./public/home/Home";
+import Vision from "./public/components/Vision";
+import Beliefs from "./public/components/Beliefs";
+import Fellowship from "./public/components/Fellowship";
+import Pastor from "./public/components/Pastor";
+import reportWebVitals from "./reportWebVitals";
+import { ToastContainer } from "react-toastify";
+import ScrollToTop from "../src/services/ScrollToTop";
+import "react-toastify/dist/ReactToastify.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/beliefs" element={<Beliefs />} />
+          <Route path="/vision-method" element={<Vision />} />
+          <Route path="/our-fellowship" element={<Fellowship />} />
+          <Route path="/our-pastor" element={<Pastor />} />
+
+          <Route path="expenses" element={<App />} />
+        </Routes>
+      </ScrollToTop>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
