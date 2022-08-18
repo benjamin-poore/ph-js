@@ -8,7 +8,7 @@ const Vision = (props) => (
   <>
     <UserLayout src="/vision-hero.jpg" alt="vision hero image">
       <Row>
-        <Col xs={12} lg={9} xl={6} className="mx-auto">
+        <Col xs={12} lg={9} className="mx-auto">
           <Card className="p-2">
             <Card.Body>
               <h1>THE LOCAL CHURCH</h1>

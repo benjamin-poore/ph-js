@@ -7,9 +7,9 @@ import AboutUsLinks from "../components/AboutUsLinks";
 
 const Vision = (props) => (
   <>
-    <UserLayout src="/vision-hero.jpg" alt="vision hero image">
+    <UserLayout src="/rememberance.jpg" alt="pastor hero image">
       <Row>
-        <Col xs={12} lg={9} xl={6} className="mx-auto">
+        <Col xs={12} lg={9} className="mx-auto">
           <Card className="p-2">
             <Card.Body>
               <Row>

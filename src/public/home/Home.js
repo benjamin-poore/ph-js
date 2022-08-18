@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import UserLayout from "../Layout";
 import Services from "../services/Services";
 import Location from "../location/Location";
-import ContactForm from "../forms/Contact_Form";
+import ContactForm from "../forms/ContactForm";
 import HomeIconLinks from "../components/HomeIconLinks";
 
 const Home = () => (
@@ -17,7 +17,7 @@ const Home = () => (
 
       <Container>
         <Row>
-          <Col xs={12} md={9} xl={6} className="mx-auto">
+          <Col xs={12} md={9} className="mx-auto">
             <Card>
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>

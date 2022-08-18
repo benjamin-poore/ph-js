@@ -8,6 +8,8 @@ import Vision from "./public/components/Vision";
 import Beliefs from "./public/components/Beliefs";
 import Fellowship from "./public/components/Fellowship";
 import Pastor from "./public/components/Pastor";
+import LocationPage from "./public/components/LocationPage";
+import ContactPage from "./public/components/ContactPage";
 import reportWebVitals from "./reportWebVitals";
 import { ToastContainer } from "react-toastify";
 import ScrollToTop from "../src/services/ScrollToTop";
@@ -36,6 +38,8 @@ root.render(
           <Route path="/vision-method" element={<Vision />} />
           <Route path="/our-fellowship" element={<Fellowship />} />
           <Route path="/our-pastor" element={<Pastor />} />
+          <Route path="/location" element={<LocationPage />} />
+          <Route path="/contact" element={<ContactPage />} />
 
           <Route path="expenses" element={<App />} />
         </Routes>
